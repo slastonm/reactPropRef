@@ -7,6 +7,9 @@ import { Props2GreetingDestructured } from "./components/props/Props2GreetingDes
 import { Props7TextBlock } from "./components/props/Props7TextBlock";
 import { Props4TechList } from "./components/props/Props4TechList";
 import { Props3UserCard } from "./components/props/Props3UserCard";
+import RefExample1FocusInput from "./components/refExamples/RefExample1FocusInput";
+import RefExample2UncontrolledInput from "./components/refExamples/RefExample2UncontrolledInput";
+import HookExampleFetchTodos from "./components/hookContextExamples/HookExampleFetchTodos";
 
 const student = {
   name: "Olena",
@@ -32,7 +35,13 @@ function App() {
   return (
     <>
       <main className="app">
-        <h1>React Props:</h1>
+        <h1>React refs:</h1>
+        <RefExample1FocusInput></RefExample1FocusInput>
+        <RefExample2UncontrolledInput></RefExample2UncontrolledInput>
+
+        <HookExampleFetchTodos></HookExampleFetchTodos>
+
+        {/* <h1>React Props:</h1>
         <Props1GreetingFromPropsObject
           title="Hello"
           name="Olena"
@@ -55,7 +64,7 @@ function App() {
         <hr />
         {actionLog}
         <hr />
-        {/* error tyt */}
+
         <Props6InfoPanel title="hello component" footer="component footer">
           <ul>
             <li>Hello 1</li>
@@ -65,7 +74,7 @@ function App() {
         </Props6InfoPanel>
         <Props7TextBlock></Props7TextBlock>
         <Props7TextBlock title="Hello" text="hello text"></Props7TextBlock>
-        <Props7TextBlock title={1} text={true}></Props7TextBlock>
+        <Props7TextBlock title={1} text={true}></Props7TextBlock> */}
       </main>
     </>
   );
